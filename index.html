@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="game-head" id="game-head">Not so smart 2P Tic-Tac-Toe</h1>
+
+        <div class="flag-select" id="flagselect">
+            <h1>Player 1, please choose your mark:</h1>
+            <button class="buttons" id="X" onclick="flagSelect(id)">X</button>
+            <button class="buttons" id="O" onclick="flagSelect(id)">O</button>
+        </div>
+
+        <!-- Dialog to prompt player 1 to choose their mark -->
+        <!-- <dialog class="modal" id="mark-dialog">Please Select mark for player one.</dialog> -->
+
+        <div class="gamebox" id="gamebox">
+            <input class="tile" id="tile1" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile2" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile3" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile4" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile5" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile6" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile7" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile8" onclick="handleClick(id)" readonly></input>
+            <input class="tile" id="tile9" onclick="handleClick(id)" readonly></input>
+        </div>
+
+        <dialog class="modal" id="p1win">Player one wins! :D</dialog>
+        <dialog class="modal" id="p2win">Player two wins! :D</dialog>
+
+        <div class="controls">
+            <button class="buttons" id="reset-board" onclick="resetBoard()">Reset Board</button>
+            <!-- <button class="buttons" id="reset-all" onclick="resetAll()">Reset All</button> -->
+        </div>
+
+    </div>    
+</body>
+</html>
